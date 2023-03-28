@@ -1,10 +1,10 @@
 # C++20 Thread Pool (header file only)
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
-![cmake Build](https://github.com/martelkr/cppsocket/actions/workflows/cmake.yml/badge.svg)
-![clang Build](https://github.com/martelkr/cppsocket/actions/workflows/clang.yml/badge.svg)
-![profile Build](https://github.com/martelkr/cppsocket/actions/workflows/profile.yml/badge.svg)
-![cppcheck Build](https://github.com/martelkr/cppsocket/actions/workflows/cppcheck.yml/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/martelkr/cppsocket/badge.svg?branch=main)](https://coveralls.io/github/martelkr/cppsocket?branch=main)
+![cmake Build](https://github.com/martelkr/threadpool/actions/workflows/cmake.yml/badge.svg)
+![clang Build](https://github.com/martelkr/threadpool/actions/workflows/clang.yml/badge.svg)
+![profile Build](https://github.com/martelkr/threadpool/actions/workflows/profile.yml/badge.svg)
+![cppcheck Build](https://github.com/martelkr/threadpool/actions/workflows/cppcheck.yml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/martelkr/threadpool/badge.svg?branch=main)](https://coveralls.io/github/martelkr/threadpool?branch=main)
 
 ## About
 This is a header file only implementation of a C++20 style thread pool.
