@@ -1,0 +1,5 @@
+test/TestThreadPool.cpp:34:36: error: Cannot determine that 'argv[0]' is initialized (you can use 'const' to say data must be initialized) [bughuntingUninitNonConstArg]
+    testing::InitGoogleTest(&argc, argv);
+                                   ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
