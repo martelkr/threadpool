@@ -126,5 +126,10 @@ namespace com::thread
         std::counting_semaphore<MAX_SEMS> m_sem;
         std::queue<std::function<void()>> m_jobs;
         mutable std::mutex m_mutex;
-    };
+
+        Pool& operator=(const Pool&) = delete;
+        Pool(const Pool&) = delete;
+        Pool(Pool&&) = delete;
+        Pool& operator=(Pool&&) = delete;
+      };
 }
