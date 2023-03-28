@@ -33,7 +33,7 @@ namespace com::thread
                 std::promise<void> p;
                 std::shared_future<void> f = p.get_future();
                 m_futures.push_back(f);
-                m_threads.emplace_back(std::move(std::jthread([this, p = std::move(p)](std::stop_token stop) mutable
+                m_threads.emplace_back(std::jthread([this, p = std::move(p)](std::stop_token stop) mutable
                 {
                     while(!stop.stop_requested())
                     {
@@ -56,7 +56,7 @@ namespace com::thread
                     }
 
                     p.set_value();
-                })));
+                }));
             }
         }
 

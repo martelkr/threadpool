@@ -20,14 +20,6 @@ jobs:
     - name: Install gtest manually
       run: sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make && sudo cp lib/*.a /usr/lib && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
 
-    - name: Write files
-      env: 
-        FILE_ONE: ${{ secrets.KRM_MAIN_FILE }}
-        FILE_TWO: ${{ secrets.KRM_SCND_FILE }}
-      run: |
-        echo "${FILE_ONE}" | base64 --decode > ${HOME}/key.pem |
-        echo "${FILE_TWO}" | base64 --decode > ${HOME}/scert.crt
-
     - name: Build and Test
       run: |
         cmake . -B ${{github.workspace}}/build -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++
